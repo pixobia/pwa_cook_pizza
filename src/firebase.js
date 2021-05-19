@@ -13,7 +13,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+const db = firebase.firestore().enablePersistence({ synchronizeTabs: true })
+    .catch(err => console.log(err));
 
 const getFirebaseRecipes = () => {
   try {

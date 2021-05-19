@@ -1,10 +1,6 @@
 import React from "react";
 import {useCookPizzaStore} from "../../CookPizzaContext";
 import {useObserver} from "mobx-react-lite";
-import starter from "../../assets/images/starter.png";
-import main_dish from "../../assets/images/main_dish.png";
-import dessert from "../../assets/images/dessert.png";
-import cart from "../../assets/images/shopping-cart.png";
 import {StyledRecipe, StyledFoodImg, StyledCartImg, StyledImgContainer, StyledTextarea} from "./Recipe.style";
 
 const Recipe = (props) => {
@@ -13,16 +9,16 @@ const Recipe = (props) => {
     return useObserver(() => (
         <StyledRecipe>
             <StyledImgContainer>
-                <StyledCartImg src={cart} alt="Einkaufswagen" />
+                <StyledCartImg src="/assets/images/shopping-cart.png" alt="Einkaufswagen" />
             </StyledImgContainer>
             {props.recipe.category === "Vorpseise" &&
-                <StyledFoodImg src={starter} alt="Bild einer Vorpseise" />
+                <StyledFoodImg src="/assets/images/starter.png" alt="Bild einer Vorpseise" />
             }
             {props.recipe.category === "Hauptspeise" &&
-            <StyledFoodImg src={main_dish} alt="Bild einer Hauptspeise" />
+            <StyledFoodImg src="/assets/images/main_dish.png" alt="Bild einer Hauptspeise" />
             }
             {props.recipe.category === "Dessert" &&
-            <StyledFoodImg src={dessert} alt="Bild eines Desserts" />
+            <StyledFoodImg src="/assets/images/dessert.png" alt="Bild eines Desserts" />
             }
             <StyledTextarea>
                 <h2>{props.recipe.title}</h2>

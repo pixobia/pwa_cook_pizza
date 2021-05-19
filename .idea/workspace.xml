@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b31fbf78-3179-4da3-92ce-314cc48b300e" name="Default Changelist" comment="setup project, wip homepage">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/dessert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/main_dish.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/shopping-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/starter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firestore.rules" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.rules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon256.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon96.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputs/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputs/Button.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipes/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/Recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1scDwSSEUxeQtDs4ILawHdhA1yg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/src/components/pages" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b31fbf78-3179-4da3-92ce-314cc48b300e" name="Default Changelist" comment="" />
+      <created>1621163223447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621163223447</updated>
+      <workItem from="1621163224842" duration="12861000" />
+      <workItem from="1621236263596" duration="418000" />
+      <workItem from="1621249309925" duration="11367000" />
+      <workItem from="1621325544649" duration="3100000" />
+      <workItem from="1621349084487" duration="8307000" />
+    </task>
+    <task id="LOCAL-00001" summary="setup project, wip homepage">
+      <created>1621265024875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621265024876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="setup project, wip homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup project, wip homepage" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621172358022">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="452" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1621172358022" />
+    <state x="320" y="142" key="Vcs.Push.Dialog.v2" timestamp="1621265030064">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="320" y="142" key="Vcs.Push.Dialog.v2/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621265030064" />
+    <state x="521" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621360169711">
+      <screen x="0" y="25" width="1440" height="787" />
+    </state>
+    <state x="521" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621360169711" />
+    <state x="421" y="171" width="597" height="496" key="find.popup" timestamp="1621409176196">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="421" y="171" width="597" height="490" key="find.popup/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621356576608" />
+    <state x="421" y="171" width="597" height="496" key="find.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621409176196" />
+    <state x="421" y="173" width="597" height="490" key="find.popup/0.25.1440.797/1440.-155.1920.1055@0.25.1440.797" timestamp="1621275407436" />
+    <state x="421" y="187" width="597" height="548" key="find.popup/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621362322972" />
+    <state x="385" y="136" width="670" height="676" key="search.everywhere.popup" timestamp="1621329265166">
+      <screen x="0" y="25" width="1440" height="787" />
+    </state>
+    <state x="385" y="136" width="670" height="676" key="search.everywhere.popup/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621329265166" />
+  </component>
+</project>
