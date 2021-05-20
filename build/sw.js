@@ -15,7 +15,7 @@ const URLS_TO_CACHE = [
   "/static/media/dessert.png",
   "/static/media/main-dish.png",
 ];
-
+console.log("in the sw file");
 const self = this;
 
 self.addEventListener("install", (event) => {

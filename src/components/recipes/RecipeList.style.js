@@ -12,4 +12,5 @@ export const StyledRecipeItem = styled.li`
   background-color: white;
   width: 40%;
   border-radius: 20px;
+  margin-bottom: 50px;
 `;

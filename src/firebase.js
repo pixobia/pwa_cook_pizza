@@ -20,7 +20,6 @@ const db = firebase
 
 const getFirebaseRecipes = () => {
   try {
-    console.log("connection to FB");
     let data = firebase.firestore().collection("recipes");
     return data.get();
   } catch (error) {
@@ -31,12 +30,10 @@ const getFirebaseRecipes = () => {
 
 const getRecipesFromFirebase = async () => {
   try {
-    console.log("connected");
     const data = await getFirebaseRecipes();
     const loadedRecipes = [];
     data.forEach((doc) => {
       loadedRecipes.push(doc.data());
-      console.log(doc.data());
     });
 
     return loadedRecipes;
@@ -46,4 +43,43 @@ const getRecipesFromFirebase = async () => {
   }
 };
 
-export { firebaseApp, db, getRecipesFromFirebase };
+const getSettingsFromFirebase = async () => {
+  try {
+    const cartRef = firebase.firestore().collection('settings').doc('shopping_cart');
+    const doc = await cartRef.get();
+    return doc.data().article_count;
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error: Getting Data");
+  }
+};
+
+// const resetShoppingCartCount = async () => {
+//   try {
+//     const cartRef = firebase.firestore().collection('settings').doc('shopping_cart');
+//     const res = await cartRef.update({article_count: 0});
+//   }
+//   catch (error) {
+//     console.log(error);
+//     throw new Error("Error: Updating Data");
+//   }
+// }
+
+const incrementShoppingCartCount = async () => {
+  try {
+    let settingsCountRef = firebase
+        .firestore()
+        .collection("settings")
+        .doc("shopping_cart");
+
+      await settingsCountRef.update({
+        article_count: firebase.firestore.FieldValue.increment(1)
+      });
+  }
+  catch {
+    throw new Error("Error: Updating Data");
+  }
+};
+
+
+export { firebaseApp, db, getRecipesFromFirebase, incrementShoppingCartCount, getSettingsFromFirebase };

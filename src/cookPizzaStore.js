@@ -3,9 +3,9 @@ export function createCookPizzaStore() {
   return {
     loading: 0,
     recipes: null,
-    shopping_cart_count: 0,
-    addItemToCart() {
-      this.shopping_cart_count += 1;
-    }
+    article_count: 0,
+    addArticle() {
+      this.article_count += 1;
+    },
   };
 }

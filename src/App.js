@@ -8,14 +8,14 @@ import Home from "./components/pages/Home";
 import Navigation from "./components/nav/Navigation";
 import Footer from "./components/nav/Footer";
 import Loading from "./components/pages/Loading";
-import { getRecipesFromFirebase } from "./firebase";
+import { getRecipesFromFirebase, getSettingsFromFirebase } from "./firebase";
 
 function App() {
   const store = useCookPizzaStore();
   useEffect(async () => {
     try {
       store.recipes = await getRecipesFromFirebase();
-      console.log(store.recipes);
+      store.article_count = await getSettingsFromFirebase();
     } catch (error) {
       console.log(error);
     }

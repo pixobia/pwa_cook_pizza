@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -11,41 +14,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b31fbf78-3179-4da3-92ce-314cc48b300e" name="Default Changelist" comment="wip update action">
-      <change afterPath="$PROJECT_DIR$/src/components/inputs/UpdateButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/dessert.6c0d4abb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/main_dish.8b10d1d7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/shopping-cart.96c73cb4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/starter.336f91aa.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputs/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/Container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/Container.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/Container.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/nav/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Footer.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Footer.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Error.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Loading.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Loading.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/RecipeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/RecipeForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/recipes/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/Recipe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/recipes/Recipe.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/Recipe.style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/recipes/RecipeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/RecipeList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/recipes/RecipeList.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/RecipeList.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cookPizzaStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cookPizzaStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +101,8 @@
       <workItem from="1621349084487" duration="13069000" />
       <workItem from="1621493740650" duration="77000" />
       <workItem from="1621509725786" duration="5588000" />
+      <workItem from="1621522997963" duration="210000" />
+      <workItem from="1621537380398" duration="4124000" />
     </task>
     <task id="LOCAL-00001" summary="setup project, wip homepage">
       <created>1621265024875</created>
@@ -124,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621409577557</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="wip update action">
+      <created>1621523188899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621523188899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,9 +161,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="452" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1621172358022" />
-    <state x="320" y="131" key="Vcs.Push.Dialog.v2" timestamp="1621409581679">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state x="1867" y="-14" key="Vcs.Push.Dialog.v2" timestamp="1621523195130">
+      <screen x="1440" y="-155" width="1920" height="1055" />
     </state>
+    <state x="1867" y="-14" key="Vcs.Push.Dialog.v2/0.25.1440.788/1440.-155.1920.1055@1440.-155.1920.1055" timestamp="1621523195130" />
     <state x="320" y="131" key="Vcs.Push.Dialog.v2/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621409581679" />
     <state x="320" y="142" key="Vcs.Push.Dialog.v2/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621265030064" />
     <state x="521" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621360169711">
@@ -170,11 +179,11 @@
     <state x="421" y="171" width="597" height="518" key="find.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621514137486" />
     <state x="421" y="173" width="597" height="490" key="find.popup/0.25.1440.797/1440.-155.1920.1055@0.25.1440.797" timestamp="1621275407436" />
     <state x="421" y="187" width="597" height="548" key="find.popup/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621362322972" />
-    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup" timestamp="1621515280929">
+    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup" timestamp="1621540898743">
       <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="385" y="136" width="670" height="676" key="search.everywhere.popup/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621329265166" />
-    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup/0.25.1440.788/1440.-155.1920.1055@0.25.1440.788" timestamp="1621515280929" />
+    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup/0.25.1440.788/1440.-155.1920.1055@0.25.1440.788" timestamp="1621540898743" />
     <state x="385" y="137" width="670" height="680" key="search.everywhere.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621514132337" />
   </component>
 </project>

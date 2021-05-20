@@ -1,6 +1,6 @@
 import React from "react";
 import { useCookPizzaStore } from "../../CookPizzaContext";
-import { useObserver } from "mobx-react-lite";
+import { incrementShoppingCartCount } from "../../firebase";
 import {
   StyledRecipe,
   StyledFoodImg,
@@ -11,9 +11,21 @@ import {
 
 const Recipe = (props) => {
     const store = useCookPizzaStore();
+    const updateShoppingCart = async() => {
+        try {
+            await store.addArticle();
+            await incrementShoppingCartCount();
+        }
+        catch (error) {
+           console.log(error);
+            throw new Error("Error: Updating Data");
+        }
+    }
   return (
     <StyledRecipe>
-      <StyledImgContainer>
+      <StyledImgContainer onClick={() => {
+          updateShoppingCart();
+      }}>
         <StyledCartImg
           src="/assets/images/shopping-cart.png"
           alt="Einkaufswagen"
