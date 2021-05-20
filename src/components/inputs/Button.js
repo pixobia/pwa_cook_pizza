@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Button = styled.button`
   background: transparent;
@@ -11,4 +11,4 @@ export const Button = styled.button`
   height: 50px;
   font-weight: bold;
   cursor: pointer;
-`
+`;

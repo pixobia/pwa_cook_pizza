@@ -7,14 +7,14 @@ import Container from "../layouts/Container";
 import RecipeList from "../recipes/RecipeList";
 
 const Home = () => {
-    const store = useCookPizzaStore();
+  const store = useCookPizzaStore();
 
-    return useObserver(() => (
-        <>
-            <h2>Rezepte</h2>
-            <RecipeList/>
-        </>
-    ));
+  return useObserver(() => (
+    <>
+      <h2>Rezepte</h2>
+      <RecipeList />
+    </>
+  ));
 };
 
 export default Home;

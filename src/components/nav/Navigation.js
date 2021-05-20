@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Navigation = styled.h1`
-color: white;
+  color: white;
 `;
 
 export default Navigation;

@@ -1,37 +1,33 @@
-import React, {useEffect, useState} from "react";
-import {Button} from "./Button";
+import React, { useEffect, useState } from "react";
+import { Button } from "./Button";
 
 const InstallButton = () => {
-    const [supportsPWA, setSupportsPWA] = useState(false);
-    const [promptInstall, setPromptInstall] = useState(null);
+  const [supportsPWA, setSupportsPWA] = useState(false);
+  const [promptInstall, setPromptInstall] = useState(null);
 
-    useEffect(() => {
-        const handler = e => {
-            e.preventDefault();
-            console.log("PWA is supported!");
-            setSupportsPWA(true);
-            setPromptInstall(e);
-        };
-        window.addEventListener("beforeinstallprompt", handler);
-
-        //return () => window.removeEventListener("transitionend", handler);
-    }, []);
-
-    const onClick = e => {
-        e.preventDefault();
-        if (!promptInstall) {
-            return;
-        }
-        promptInstall.prompt();
+  useEffect(() => {
+    const handler = (e) => {
+      e.preventDefault();
+      console.log("PWA is supported!");
+      setSupportsPWA(true);
+      setPromptInstall(e);
     };
-    if (!supportsPWA) {
-        return null;
+    window.addEventListener("beforeinstallprompt", handler);
+
+    //return () => window.removeEventListener("transitionend", handler);
+  }, []);
+
+  const install = (e) => {
+    e.preventDefault();
+    if (!promptInstall) {
+      return;
     }
-    return (
-        <Button onClick={onClick} >
-            Installieren
-        </Button>
-    );
-}
+    promptInstall.prompt();
+  };
+  if (!supportsPWA) {
+    return null;
+  }
+  return <Button onClick={install}>Installieren</Button>;
+};
 
 export default InstallButton;

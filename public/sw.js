@@ -1,21 +1,21 @@
 const CACHE_NAME = "OFFLINE_VERSION";
 const URLS_TO_CACHE = [
-    '/',
-    '/main.js',
-    '/manifest.json',
-    '/favicon.ico',
-    '/favicon96.png',
-    '/favicon192.png',
-    '/favicon256.png',
-    '/favicon512.png',
-    '/static/js/bundle.js',
-    '/static/js/vendors~main.chunk.js',
-    '/static/js/main.chunk.js',
-    '/static/media/shopping-cart.png',
-    '/static/media/dessert.png',
-    '/static/media/main-dish.png'
+  "/",
+  "/main.js",
+  "/manifest.json",
+  "/favicon.ico",
+  "/favicon96.png",
+  "/favicon192.png",
+  "/favicon256.png",
+  "/favicon512.png",
+  "/static/js/bundle.js",
+  "/static/js/vendors~main.chunk.js",
+  "/static/js/main.chunk.js",
+  "/static/media/shopping-cart.png",
+  "/static/media/dessert.png",
+  "/static/media/main-dish.png",
 ];
-
+console.log("in the sw file");
 const self = this;
 
 self.addEventListener("install", (event) => {
@@ -62,21 +62,21 @@ self.addEventListener("fetch", (event) => {
     });
   });
 
-    if (event.request.method === 'GET') {
-        event.respondWith(
-            fetch(event.request).catch(() => {
-                return caches.match(event.request);
-            }),
-        );
-    }
+  if (event.request.method === "GET") {
+    event.respondWith(
+      fetch(event.request).catch(() => {
+        return caches.match(event.request);
+      })
+    );
+  }
 
-    if (event.request.method === 'POST') {
-        event.respondWith(
-            fetch(event.request).catch(() => {
-                return caches.match(event.request);
-            }),
-        );
-    }
+  if (event.request.method === "POST") {
+    event.respondWith(
+      fetch(event.request).catch(() => {
+        return caches.match(event.request);
+      })
+    );
+  }
 
   //self.skipWaiting();
 });

@@ -1,7 +1,5 @@
 import React from "react";
 
-const RecipeForm = () => {
-   
-}
+const RecipeForm = () => {};
 
 export default RecipeForm;

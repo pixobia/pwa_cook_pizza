@@ -10,25 +10,42 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b31fbf78-3179-4da3-92ce-314cc48b300e" name="Default Changelist" comment="setup project, wip homepage">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/dessert.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/main_dish.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/shopping-cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/starter.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firestore.rules" beforeDir="false" afterPath="$PROJECT_DIR$/firestore.rules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon256.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon256.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/favicon96.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon96.png" afterDir="false" />
+    <list default="true" id="b31fbf78-3179-4da3-92ce-314cc48b300e" name="Default Changelist" comment="wip update action">
+      <change afterPath="$PROJECT_DIR$/src/components/inputs/UpdateButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/css/main.4d7ae728.chunk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/2.25b3e400.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/3.49a22118.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/main.6d2b6920.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/runtime-main.250a48af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/inputs/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/inputs/Button.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/inputs/InstallButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/Container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/Container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/Container.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/Container.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Footer.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Footer.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Error.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Error.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Loading.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Loading.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/RecipeForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/RecipeForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/recipes/Recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/Recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipes/Recipe.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/Recipe.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipes/RecipeList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/RecipeList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/recipes/RecipeList.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/recipes/RecipeList.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cookPizzaStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/cookPizzaStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +67,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/inputs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,10 +76,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/inputs" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/src/components/pages" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -82,7 +99,9 @@
       <workItem from="1621236263596" duration="418000" />
       <workItem from="1621249309925" duration="11367000" />
       <workItem from="1621325544649" duration="3100000" />
-      <workItem from="1621349084487" duration="8307000" />
+      <workItem from="1621349084487" duration="13069000" />
+      <workItem from="1621493740650" duration="77000" />
+      <workItem from="1621509725786" duration="5588000" />
     </task>
     <task id="LOCAL-00001" summary="setup project, wip homepage">
       <created>1621265024875</created>
@@ -91,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621265024876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="wip homepage, add deferred installment">
+      <created>1621409553267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621409553268</updated>
+    </task>
+    <task id="LOCAL-00003" summary="wip homepage, add deferred installment">
+      <created>1621409577557</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621409577557</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,31 +144,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup project, wip homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup project, wip homepage" />
+    <MESSAGE value="wip homepage, add deferred installment" />
+    <MESSAGE value="wip update action" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip update action" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="256" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621172358022">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="452" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.-180.1920.1080@0.0.1440.900" timestamp="1621172358022" />
-    <state x="320" y="142" key="Vcs.Push.Dialog.v2" timestamp="1621265030064">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="320" y="131" key="Vcs.Push.Dialog.v2" timestamp="1621409581679">
+      <screen x="0" y="25" width="1440" height="791" />
     </state>
+    <state x="320" y="131" key="Vcs.Push.Dialog.v2/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621409581679" />
     <state x="320" y="142" key="Vcs.Push.Dialog.v2/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621265030064" />
     <state x="521" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621360169711">
       <screen x="0" y="25" width="1440" height="787" />
     </state>
     <state x="521" y="336" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621360169711" />
-    <state x="421" y="171" width="597" height="496" key="find.popup" timestamp="1621409176196">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state x="421" y="170" width="597" height="517" key="find.popup" timestamp="1621515025823">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="421" y="171" width="597" height="490" key="find.popup/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621356576608" />
-    <state x="421" y="171" width="597" height="496" key="find.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621409176196" />
+    <state x="421" y="170" width="597" height="517" key="find.popup/0.25.1440.788/1440.-155.1920.1055@0.25.1440.788" timestamp="1621515025823" />
+    <state x="421" y="171" width="597" height="518" key="find.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621514137486" />
     <state x="421" y="173" width="597" height="490" key="find.popup/0.25.1440.797/1440.-155.1920.1055@0.25.1440.797" timestamp="1621275407436" />
     <state x="421" y="187" width="597" height="548" key="find.popup/0.25.1440.875/1440.-155.1920.967@0.25.1440.875" timestamp="1621362322972" />
-    <state x="385" y="136" width="670" height="676" key="search.everywhere.popup" timestamp="1621329265166">
-      <screen x="0" y="25" width="1440" height="787" />
+    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup" timestamp="1621515280929">
+      <screen x="0" y="25" width="1440" height="788" />
     </state>
     <state x="385" y="136" width="670" height="676" key="search.everywhere.popup/0.25.1440.787/1440.-155.1920.1055@0.25.1440.787" timestamp="1621329265166" />
+    <state x="385" y="137" width="670" height="678" key="search.everywhere.popup/0.25.1440.788/1440.-155.1920.1055@0.25.1440.788" timestamp="1621515280929" />
+    <state x="385" y="137" width="670" height="680" key="search.everywhere.popup/0.25.1440.791/1440.-155.1920.1055@0.25.1440.791" timestamp="1621514132337" />
   </component>
 </project>

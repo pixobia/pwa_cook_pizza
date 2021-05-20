@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledContainer = styled.div`
-background-color: grey;
-`
+  background-color: grey;
+`;
 
 export default StyledContainer;

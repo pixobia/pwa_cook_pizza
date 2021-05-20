@@ -8,11 +8,11 @@ import ErrorBoundary from "./components/pages/Error";
 
 ReactDOM.render(
   <React.StrictMode>
-      <CookPizzaProvider>
-          <ErrorBoundary>
-              <App />
-          </ErrorBoundary>
-      </CookPizzaProvider>
+    <CookPizzaProvider>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </CookPizzaProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -13,15 +13,15 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore().enablePersistence({ synchronizeTabs: true })
-    .catch(err => console.log(err));
+const db = firebase
+  .firestore()
+  .enablePersistence({ synchronizeTabs: true })
+  .catch((err) => console.log(err));
 
 const getFirebaseRecipes = () => {
   try {
-    console.log("connection to FB")
-    let data = firebase
-      .firestore()
-      .collection("recipes")
+    console.log("connection to FB");
+    let data = firebase.firestore().collection("recipes");
     return data.get();
   } catch (error) {
     console.log(error);
@@ -31,7 +31,7 @@ const getFirebaseRecipes = () => {
 
 const getRecipesFromFirebase = async () => {
   try {
-    console.log("connected")
+    console.log("connected");
     const data = await getFirebaseRecipes();
     const loadedRecipes = [];
     data.forEach((doc) => {
@@ -46,9 +46,4 @@ const getRecipesFromFirebase = async () => {
   }
 };
 
-
-export {
-  firebaseApp,
-  db,
-  getRecipesFromFirebase
-};
+export { firebaseApp, db, getRecipesFromFirebase };
