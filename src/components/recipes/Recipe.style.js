@@ -31,7 +31,7 @@ export const StyledImgContainer = styled.div`
   padding: 1rem;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   right: 10px;
-  bottom: 170px;
+  top: 102px;
   cursor: pointer;
 `;
 

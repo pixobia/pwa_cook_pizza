@@ -13,6 +13,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+//const messaging = firebase.messaging();
 const db = firebase
   .firestore()
   .enablePersistence({ synchronizeTabs: true })
@@ -45,7 +46,10 @@ const getRecipesFromFirebase = async () => {
 
 const getSettingsFromFirebase = async () => {
   try {
-    const cartRef = firebase.firestore().collection('settings').doc('shopping_cart');
+    const cartRef = firebase
+      .firestore()
+      .collection("settings")
+      .doc("shopping_cart");
     const doc = await cartRef.get();
     return doc.data().article_count;
   } catch (error) {
@@ -68,18 +72,35 @@ const getSettingsFromFirebase = async () => {
 const incrementShoppingCartCount = async () => {
   try {
     let settingsCountRef = firebase
-        .firestore()
-        .collection("settings")
-        .doc("shopping_cart");
+      .firestore()
+      .collection("settings")
+      .doc("shopping_cart");
 
-      await settingsCountRef.update({
-        article_count: firebase.firestore.FieldValue.increment(1)
-      });
-  }
-  catch {
+    await settingsCountRef.update({
+      article_count: firebase.firestore.FieldValue.increment(1),
+    });
+  } catch {
     throw new Error("Error: Updating Data");
   }
 };
 
+export const askForPermissionToReceiveNotifications = async () => {
+  try {
+    const messaging = firebase.messaging();
+    await messaging.requestPermission();
+    const token = await messaging.getToken();
+    console.log("Your token is:", token);
 
-export { firebaseApp, db, getRecipesFromFirebase, incrementShoppingCartCount, getSettingsFromFirebase };
+    return token;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export {
+  firebaseApp,
+  db,
+  getRecipesFromFirebase,
+  incrementShoppingCartCount,
+  getSettingsFromFirebase,
+};

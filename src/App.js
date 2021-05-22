@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import { useCookPizzaStore } from "./CookPizzaContext";
 import Home from "./components/pages/Home";
+import Info from "./components/pages/Info";
 import Navigation from "./components/nav/Navigation";
 import Footer from "./components/nav/Footer";
 import Loading from "./components/pages/Loading";
@@ -22,10 +23,12 @@ function App() {
   }, []);
   return useObserver(() => (
     <>
-      <Navigation>Cook & Pizza</Navigation>
+      <Navigation/>
       <BrowserRouter>
         <Switch>
-          <Route path="/download_work_design_comics"></Route>
+          <Route path="/info">
+            {store.recipes === null ? <Loading /> : <Info />}
+          </Route>
           <Route path="/">
             {store.recipes === null ? <Loading /> : <Home />}
           </Route>

@@ -1,20 +1,22 @@
 import React from "react";
-import { useCookPizzaStore } from "../../CookPizzaContext";
-import { useObserver } from "mobx-react-lite";
-import Button from "../inputs/Button";
-import Navigation from "../nav/Navigation";
-import Container from "../layouts/Container";
 import RecipeList from "../recipes/RecipeList";
+import {
+  StyledContainerOuter,
+  StyledContainerInner,
+} from "../layouts/Container.style";
+
+import { AddButton } from "../inputs/AddButton";
 
 const Home = () => {
-  const store = useCookPizzaStore();
 
-  return useObserver(() => (
-    <>
-      <h2>Rezepte</h2>
-      <RecipeList />
-    </>
-  ));
+  return (
+      <StyledContainerOuter>
+        <StyledContainerInner>
+          <RecipeList />
+          {/*<AddButton><p>+</p></AddButton>*/}
+        </StyledContainerInner>
+      </StyledContainerOuter>
+  );
 };
 
 export default Home;

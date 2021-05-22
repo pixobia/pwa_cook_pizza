@@ -9,18 +9,16 @@ const URLS_TO_CACHE = [
   "/favicon256.png",
   "/favicon512.png",
   "/static/js/bundle.js",
-  "/static/js/vendors~main.chunk.js",
-  "/static/js/main.chunk.js",
-  "/static/media/shopping-cart.png",
-  "/static/media/dessert.png",
-  "/static/media/main-dish.png",
+  "/assets/images/shopping-cart.png",
+  "/assets/images/starter.png",
+  "/assets/images/main_dish.png",
+  "/assets/images/dessert.png",
 ];
 console.log("in the sw file");
 const self = this;
 
 self.addEventListener("install", (event) => {
   console.log("[ServiceWorker] install event");
-  //self.skipWaiting();
 
   event.waitUntil(
     (async () => {
@@ -34,7 +32,6 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("activate", (event) => {
   console.log("[ServiceWorker] activate event");
-  //self.skipWaiting();
 
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -77,12 +74,43 @@ self.addEventListener("fetch", (event) => {
       })
     );
   }
-
-  //self.skipWaiting();
 });
 
-self.addEventListener("message", function (event) {
-  if (event.data === "skipWaiting") {
-    self.skipWaiting();
-  }
+// self.addEventListener("message", event => {
+//   if (event.data === "skipWaiting") {
+//     self.skipWaiting();
+//   }
+// });
+
+//synchronizing tabs
+self.addEventListener("message", ({ data, source: { id } }) => {
+  self.clients.matchAll().then((clients) => {
+    clients.forEach((client) => {
+      if (client.id !== id) {
+        client.postMessage(data);
+      }
+    });
+  });
 });
+
+// //setup for
+// importScripts('https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js');
+// importScripts('https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js');
+//
+// // Initialize the Firebase app in the service worker by passing in
+// // your app's Firebase config object.
+// // https://firebase.google.com/docs/web/setup#config-object
+// firebase.initializeApp({
+//   apiKey: 'api-key',
+//   authDomain: 'project-id.firebaseapp.com',
+//   databaseURL: 'https://project-id.firebaseio.com',
+//   projectId: 'project-id',
+//   storageBucket: 'project-id.appspot.com',
+//   messagingSenderId: 'sender-id',
+//   appId: 'app-id',
+//   measurementId: 'G-measurement-id',
+// });
+//
+// // Retrieve an instance of Firebase Messaging so that it can handle background
+// // messages.
+// const messaging = firebase.messaging();

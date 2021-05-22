@@ -10,22 +10,47 @@ import {
 } from "./Recipe.style";
 
 const Recipe = (props) => {
-    const store = useCookPizzaStore();
-    const updateShoppingCart = async() => {
-        try {
-            await store.addArticle();
-            await incrementShoppingCartCount();
-        }
-        catch (error) {
-           console.log(error);
-            throw new Error("Error: Updating Data");
-        }
+  const store = useCookPizzaStore();
+
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then(() => navigator.serviceWorker.ready)
+      .then(() => {
+        navigator.serviceWorker.addEventListener("message", function (event) {
+          if (event.data && event.data.state !== undefined) {
+            store.article_count = event.data.state;
+          }
+        });
+      });
+  }
+
+  const stateToServiceWorker = (data) => {
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage(data);
     }
+  };
+
+  const updateShoppingCart = async () => {
+    try {
+      await store.addArticle();
+      await incrementShoppingCartCount();
+      await stateToServiceWorker({
+        state: store.article_count,
+      });
+    } catch (error) {
+      console.log(error);
+      throw new Error("Error: Updating Data");
+    }
+  };
+
   return (
     <StyledRecipe>
-      <StyledImgContainer onClick={() => {
+      <StyledImgContainer
+        onClick={() => {
           updateShoppingCart();
-      }}>
+        }}
+      >
         <StyledCartImg
           src="/assets/images/shopping-cart.png"
           alt="Einkaufswagen"

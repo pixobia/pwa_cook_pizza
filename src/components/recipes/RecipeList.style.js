@@ -13,4 +13,5 @@ export const StyledRecipeItem = styled.li`
   width: 40%;
   border-radius: 20px;
   margin-bottom: 50px;
+  box-shadow: 0px 0px 9px gray;
 `;
