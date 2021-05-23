@@ -10,8 +10,20 @@ export const StyledRecipeList = styled.ul`
 
 export const StyledRecipeItem = styled.li`
   background-color: white;
-  width: 40%;
+  width: 30%;
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 0px 0px 9px gray;
+  
+  @media(max-width: 850px) {
+    width: 45%;
+  }
+  
+  @media(max-width: 850px) {
+    width: 45%;
+  }
+  
+  @media(max-width: 650px) {
+    width: 90%;
+  }
 `;

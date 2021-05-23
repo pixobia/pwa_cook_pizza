@@ -1,14 +1,20 @@
 import React from "react";
-import {StyledNavigation} from "./Navigation.style"
-import {Link} from "react-router-dom";
+import { StyledNavigation } from "./Navigation.style";
+import { Link, BrowserRouter } from "react-router-dom";
+import ShareButton from "../inputs/ShareButton";
 
 const Navigation = () => {
-    return (
-        <StyledNavigation>
+  return (
+    <StyledNavigation>
+        <Link to="/">
             <h1>Cook & Pizza</h1>
-                <img src="./assets/images/info.svg" alt="Informations Icon" />
-        </StyledNavigation>
-    );
+            <ShareButton/>
+        </Link>
+        <Link to="/info">
+          <img src="./assets/images/info.svg" alt="Informations Icon" />
+        </Link>
+    </StyledNavigation>
+  );
 };
 
 export default Navigation;

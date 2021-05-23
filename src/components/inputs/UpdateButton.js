@@ -2,10 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Button } from "./Button";
 
 const UpdateButton = () => {
+
   const [showBtn, setShowBtn] = useState(false);
+  const [regis, setRegis] = useState(null);
+
+  useEffect(() => {
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        listenForWaitingServiceWorker(reg, showUpdateButton);
+      });
+    }
+  }, []);
 
   const listenForWaitingServiceWorker = (reg, callback) => {
-    console.log(reg);
     function awaitStateChange() {
       reg.installing.addEventListener("statechange", function () {
         if (this.state === "installed") callback(reg);
@@ -19,29 +28,17 @@ const UpdateButton = () => {
 
   const showUpdateButton = (reg) => {
     if (reg) {
+      setRegis(reg);
       setShowBtn(true);
     }
   };
 
-  const handle = (reg) => {
-    reg.waiting.postMessage("skipWaiting");
+  const update = () => {
+    console.log("update button triggered")
+    regis.waiting.postMessage("skipWaiting");
   };
-
-  let refreshing;
-  navigator.serviceWorker.addEventListener("controllerchange", () => {
-    if (refreshing) return;
-    refreshing = true;
-    window.location.reload(true);
-  });
-
-  useEffect(() => {
-    navigator.serviceWorker.register("sw.js").then((reg) => {
-      listenForWaitingServiceWorker(reg, showUpdateButton);
-    });
-  }, []);
-
   if (showBtn) {
-    return <Button>Update</Button>;
+    return <Button onClick={update}>Update</Button>;
   }
 
   return null;

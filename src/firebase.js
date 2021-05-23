@@ -83,10 +83,9 @@ const incrementShoppingCartCount = async () => {
     throw new Error("Error: Updating Data");
   }
 };
-
+const messaging = firebase.messaging();
 export const askForPermissionToReceiveNotifications = async () => {
   try {
-    const messaging = firebase.messaging();
     await messaging.requestPermission();
     const token = await messaging.getToken();
     console.log("Your token is:", token);
@@ -96,6 +95,13 @@ export const askForPermissionToReceiveNotifications = async () => {
     console.error(error);
   }
 };
+
+export const onMessageListener = () =>
+  new Promise((resolve) => {
+    messaging.onMessage((payload) => {
+      resolve(payload);
+    });
+  });
 
 export {
   firebaseApp,

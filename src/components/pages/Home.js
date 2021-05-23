@@ -5,17 +5,15 @@ import {
   StyledContainerInner,
 } from "../layouts/Container.style";
 
-import { AddButton } from "../inputs/AddButton";
+import { ShareButton } from "../inputs/ShareButton";
 
 const Home = () => {
-
   return (
-      <StyledContainerOuter>
-        <StyledContainerInner>
-          <RecipeList />
-          {/*<AddButton><p>+</p></AddButton>*/}
-        </StyledContainerInner>
-      </StyledContainerOuter>
+    <StyledContainerOuter>
+      <StyledContainerInner>
+        <RecipeList />
+      </StyledContainerInner>
+    </StyledContainerOuter>
   );
 };
 

@@ -11,8 +11,8 @@ export const StyledContainerOuter = styled.div`
 export const StyledContainerInner = styled.div`
   display: flex;
   align-items: center;
-  max-width: 800px;
-  margin: 0 auto;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
 `;

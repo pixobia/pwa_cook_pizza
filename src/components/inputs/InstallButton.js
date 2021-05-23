@@ -13,11 +13,10 @@ const InstallButton = () => {
       setPromptInstall(e);
     };
     window.addEventListener("beforeinstallprompt", handler);
-
-    //return () => window.removeEventListener("transitionend", handler);
   }, []);
 
   const install = (e) => {
+    console.log("installed")
     e.preventDefault();
     if (!promptInstall) {
       return;

@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { useObserver } from "mobx-react-lite";
 import { useCookPizzaStore } from "./CookPizzaContext";
@@ -12,7 +12,11 @@ import Loading from "./components/pages/Loading";
 import { getRecipesFromFirebase, getSettingsFromFirebase } from "./firebase";
 
 function App() {
+  const [show, setShow] = useState(false);
+  const [notification, setNotification] = useState({ title: "", body: "" });
+
   const store = useCookPizzaStore();
+
   useEffect(async () => {
     try {
       store.recipes = await getRecipesFromFirebase();
@@ -23,8 +27,8 @@ function App() {
   }, []);
   return useObserver(() => (
     <>
-      <Navigation/>
       <BrowserRouter>
+        <Navigation />
         <Switch>
           <Route path="/info">
             {store.recipes === null ? <Loading /> : <Info />}
@@ -33,8 +37,8 @@ function App() {
             {store.recipes === null ? <Loading /> : <Home />}
           </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </>
   ));
 }

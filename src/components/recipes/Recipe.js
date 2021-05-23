@@ -56,7 +56,7 @@ const Recipe = (props) => {
           alt="Einkaufswagen"
         />
       </StyledImgContainer>
-      {props.recipe.category === "Vorpseise" && (
+      {props.recipe.category === "Vorspeise" && (
         <StyledFoodImg
           src="/assets/images/starter.png"
           alt="Bild einer Vorpseise"

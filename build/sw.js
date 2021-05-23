@@ -1,4 +1,5 @@
-const CACHE_NAME = "OFFLINE_VERSION";
+const OFFLINE_VERSION = 2;
+const CACHE_NAME = `OFFLINE_${OFFLINE_VERSION}`;
 const URLS_TO_CACHE = [
   "/",
   "/main.js",
@@ -14,7 +15,7 @@ const URLS_TO_CACHE = [
   "/assets/images/main_dish.png",
   "/assets/images/dessert.png",
 ];
-console.log("in the sw file");
+
 const self = this;
 
 self.addEventListener("install", (event) => {
@@ -76,11 +77,12 @@ self.addEventListener("fetch", (event) => {
   }
 });
 
-// self.addEventListener("message", event => {
-//   if (event.data === "skipWaiting") {
-//     self.skipWaiting();
-//   }
-// });
+self.addEventListener("message", event => {
+  if (event.data === "skipWaiting") {
+    console.log("huiii skip it!")
+    self.skipWaiting();
+  }
+});
 
 //synchronizing tabs
 self.addEventListener("message", ({ data, source: { id } }) => {
@@ -93,24 +95,21 @@ self.addEventListener("message", ({ data, source: { id } }) => {
   });
 });
 
-// //setup for
-// importScripts('https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js');
-// importScripts('https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js');
-//
-// // Initialize the Firebase app in the service worker by passing in
-// // your app's Firebase config object.
-// // https://firebase.google.com/docs/web/setup#config-object
-// firebase.initializeApp({
-//   apiKey: 'api-key',
-//   authDomain: 'project-id.firebaseapp.com',
-//   databaseURL: 'https://project-id.firebaseio.com',
-//   projectId: 'project-id',
-//   storageBucket: 'project-id.appspot.com',
-//   messagingSenderId: 'sender-id',
-//   appId: 'app-id',
-//   measurementId: 'G-measurement-id',
-// });
-//
-// // Retrieve an instance of Firebase Messaging so that it can handle background
-// // messages.
-// const messaging = firebase.messaging();
+// Scripts for firebase and firebase messaging
+importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js");
+
+// Initialize the Firebase app in the service worker by passing the generated config
+let firebaseConfig = {
+  apiKey: "AIzaSyBrKSryFJhsu6tz4XeUSYDYjDwvKnfRIyk",
+  authDomain: "pwa-cook-pizza.firebaseapp.com",
+  projectId: "pwa-cook-pizza",
+  storageBucket: "pwa-cook-pizza.appspot.com",
+  messagingSenderId: "4077784197",
+  appId: "1:4077784197:web:87999e9d9abadf63156dec",
+};
+
+firebase.initializeApp(firebaseConfig);
+
+// Retrieve firebase messaging
+const messaging = firebase.messaging();
