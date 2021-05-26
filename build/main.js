@@ -8,6 +8,5 @@ navigator.serviceWorker.addEventListener("controllerchange", () => {
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.addEventListener("message", (event) => {
-    console.log("Recaived message from sw:", event.data);
   });
 }

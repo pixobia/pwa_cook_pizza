@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 2;
+const OFFLINE_VERSION = 5;
 const CACHE_NAME = `OFFLINE_${OFFLINE_VERSION}`;
 const URLS_TO_CACHE = [
   "/",
@@ -13,7 +13,7 @@ const URLS_TO_CACHE = [
   "/assets/images/shopping-cart.png",
   "/assets/images/starter.png",
   "/assets/images/main_dish.png",
-  "/assets/images/dessert.png",
+  "/assets/images/dessert.png"
 ];
 
 const self = this;
@@ -79,7 +79,6 @@ self.addEventListener("fetch", (event) => {
 
 self.addEventListener("message", event => {
   if (event.data === "skipWaiting") {
-    console.log("huiii skip it!")
     self.skipWaiting();
   }
 });
@@ -94,22 +93,3 @@ self.addEventListener("message", ({ data, source: { id } }) => {
     });
   });
 });
-
-// Scripts for firebase and firebase messaging
-importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/8.2.0/firebase-messaging.js");
-
-// Initialize the Firebase app in the service worker by passing the generated config
-let firebaseConfig = {
-  apiKey: "AIzaSyBrKSryFJhsu6tz4XeUSYDYjDwvKnfRIyk",
-  authDomain: "pwa-cook-pizza.firebaseapp.com",
-  projectId: "pwa-cook-pizza",
-  storageBucket: "pwa-cook-pizza.appspot.com",
-  messagingSenderId: "4077784197",
-  appId: "1:4077784197:web:87999e9d9abadf63156dec",
-};
-
-firebase.initializeApp(firebaseConfig);
-
-// Retrieve firebase messaging
-const messaging = firebase.messaging();
