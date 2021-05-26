@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 5;
+const OFFLINE_VERSION = 2;
 const CACHE_NAME = `OFFLINE_${OFFLINE_VERSION}`;
 const URLS_TO_CACHE = [
   "/",
@@ -13,7 +13,7 @@ const URLS_TO_CACHE = [
   "/assets/images/shopping-cart.png",
   "/assets/images/starter.png",
   "/assets/images/main_dish.png",
-  "/assets/images/dessert.png"
+  "/assets/images/dessert.png",
 ];
 
 const self = this;
@@ -77,7 +77,7 @@ self.addEventListener("fetch", (event) => {
   }
 });
 
-self.addEventListener("message", event => {
+self.addEventListener("message", (event) => {
   if (event.data === "skipWaiting") {
     self.skipWaiting();
   }

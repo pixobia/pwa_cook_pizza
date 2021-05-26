@@ -6,13 +6,13 @@ import ShareButton from "../inputs/ShareButton";
 const Navigation = () => {
   return (
     <StyledNavigation>
-        <Link to="/">
-            <h1>Cook & Pizza</h1>
-            <ShareButton/>
-        </Link>
-        <Link to="/info">
-          <img src="./assets/images/info.svg" alt="Informations Icon" />
-        </Link>
+      <Link to="/">
+        <h1>Cook & Pizza</h1>
+        <ShareButton />
+      </Link>
+      <Link to="/info">
+        <img src="./assets/images/info.svg" alt="Informations Icon" />
+      </Link>
     </StyledNavigation>
   );
 };

@@ -16,7 +16,7 @@ const InstallButton = () => {
   }, []);
 
   const install = (e) => {
-    console.log("installed")
+    console.log("installed");
     e.preventDefault();
     if (!promptInstall) {
       return;

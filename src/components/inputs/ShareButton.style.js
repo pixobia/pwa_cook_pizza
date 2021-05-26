@@ -5,15 +5,16 @@ export const StyledShare = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
-  a, h1 {
+
+  a,
+  h1 {
     color: white;
     text-size: 20px;
     display: inline;
     text-decoration: none;
   }
   h1 {
-  padding-right: 20px;
+    padding-right: 20px;
   }
 
   img {

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Button } from "./Button";
 
 const UpdateButton = () => {
-
   const [showBtn, setShowBtn] = useState(false);
   const [regis, setRegis] = useState(null);
 
@@ -34,7 +33,7 @@ const UpdateButton = () => {
   };
 
   const update = () => {
-    console.log("update button triggered")
+    console.log("update button triggered");
     regis.waiting.postMessage("skipWaiting");
   };
   if (showBtn) {

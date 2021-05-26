@@ -14,16 +14,16 @@ export const StyledRecipeItem = styled.li`
   border-radius: 20px;
   margin-bottom: 50px;
   box-shadow: 0px 0px 9px gray;
-  
-  @media(max-width: 850px) {
+
+  @media (max-width: 850px) {
     width: 45%;
   }
-  
-  @media(max-width: 850px) {
+
+  @media (max-width: 850px) {
     width: 45%;
   }
-  
-  @media(max-width: 650px) {
+
+  @media (max-width: 650px) {
     width: 90%;
   }
 `;

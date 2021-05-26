@@ -1,4 +1,4 @@
-const OFFLINE_VERSION = 5;
+const OFFLINE_VERSION = 2;
 const CACHE_NAME = `OFFLINE_${OFFLINE_VERSION}`;
 const URLS_TO_CACHE = [
   "/",
@@ -77,7 +77,7 @@ self.addEventListener("fetch", (event) => {
   }
 });
 
-self.addEventListener("message", event => {
+self.addEventListener("message", (event) => {
   if (event.data === "skipWaiting") {
     self.skipWaiting();
   }
